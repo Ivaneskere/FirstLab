@@ -8,28 +8,29 @@
 </head>
 
 <body id="top">
-    <table border="1" cellpadding="10" cellspacing="0" width="100%">
-        <tr>
-            <td colspan="2">
-                <header>
-                    <h1>Header</h1>
 
-                    <nav>
-                        <h2>Меню навігації</h2>
-                        <ul>
-                            <li><a href="#article1">Розподіл груп</a></li>
-                            <li><a href="#article2">Прогноз погоди</a></li>
-                            <li><a href="#search">Пошук</a></li>
-                            <li><a href="#footer">Футер</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </td>
-        </tr>
+    <main>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <header>
+                        <h1>Header</h1>
 
-        <tr>
-            <td valign="top" width="70%">
-                <main>
+                        <nav>
+                            <h2>Меню навігації</h2>
+                            <ul>
+                                <li><a href="#article1">Розподіл груп</a></li>
+                                <li><a href="#article2">Прогноз погоди</a></li>
+                                <li><a href="#search">Пошук</a></li>
+                                <li><a href="#footer">Футер</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
                     <section aria-label="Content main section">
                         <h2>main</h2>
 
@@ -60,7 +61,7 @@
 
                         <article id="article2">
                             <h3>Таблиця прогнозу погоди</h3>
-                            <table border="1" cellpadding="5" cellspacing="0">
+                            <table>
                                 <caption>Прогноз погоди</caption>
                                 <thead>
                                     <tr>
@@ -111,57 +112,57 @@
                             </table>
                         </article>
                     </section>
-                </main>
-            </td>
+                </td>
 
-            <td valign="top" width="30%" id="search">
-                <aside aria-label="Search">
-                    <h2>Search</h2>
+                <td id="search">
+                    <aside aria-label="Search">
+                        <h2>Search</h2>
 
-                    <form action="search.html" method="get">
-                        <p>
-                            <label for="q">Пошуковий запит:</label>
-                            <input type="text" id="q" name="q" placeholder="Введіть текст">
-                        </p>
-                        <p>
-                            <label for="cat">Категорія:</label>
-                            <select id="cat" name="category">
-                                <option value="weather">Погода</option>
-                                <option value="groups">Групи</option>
-                                <option value="news">Новини</option>
-                            </select>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="today" name="today" value="yes">
-                            <label for="today">Показати лише сьогоднішні дані</label>
-                        </p>
-                        <p>
-                            <input type="submit" value="Знайти">
-                            <input type="reset" value="Скинути">
-                        </p>
-                    </form>
+                        <form action="search.html" method="get">
+                            <p>
+                                <label for="q">Пошуковий запит:</label>
+                                <input type="text" id="q" name="q" placeholder="Введіть текст">
+                            </p>
+                            <p>
+                                <label for="cat">Категорія:</label>
+                                <select id="cat" name="category">
+                                    <option value="weather">Погода</option>
+                                    <option value="groups">Групи</option>
+                                    <option value="news">Новини</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="today" name="today" value="yes">
+                                <label for="today">Показати лише сьогоднішні дані</label>
+                            </p>
+                            <p>
+                                <input type="submit" value="Знайти">
+                                <input type="reset" value="Скинути">
+                            </p>
+                        </form>
 
-                    <nav aria-label="Navigation">
-                        <h3>Navigation</h3>
-                        <ul>
-                            <li><a href="#article1">До списку груп</a></li>
-                            <li><a href="#article2">До таблиці погоди</a></li>
-                            <li><a href="groups.html">Інша сторінка ресурсу</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </td>
-        </tr>
+                        <nav aria-label="Navigation">
+                            <h3>Navigation</h3>
+                            <ul>
+                                <li><a href="#article1">До списку груп</a></li>
+                                <li><a href="#article2">До таблиці погоди</a></li>
+                                <li><a href="groups.html">Інша сторінка ресурсу</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </td>
+            </tr>
 
-        <tr>
-            <td colspan="2" id="footer">
-                <footer>
-                    <p>footer — 2025</p>
-                    <p><a href="#top">Повернутися до початку сторінки</a></p>
-                </footer>
-            </td>
-        </tr>
-    </table>
+            <tr>
+                <td colspan="2" id="footer">
+                    <footer>
+                        <p>footer — 2025</p>
+                        <p><a href="#top">Повернутися до початку сторінки</a></p>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </main>
 
 </body>
 
